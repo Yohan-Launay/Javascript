@@ -2,13 +2,32 @@
     background: black;
     color: white;
     font-family: Arial, sans-serif;
+}
+
+#game {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 input {
     background: white;
     color: black;
+}
+
+.point {
+    display: flex;
+}
+
+.button {
+    display: flex;
+}
+
+#gameBot, #gameHumain {
+    padding: 0 10px;
+}
+
+#bot, #humain {
+    color: orange;
 }

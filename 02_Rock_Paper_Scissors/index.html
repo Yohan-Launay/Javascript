@@ -7,14 +7,23 @@
 </head>
 <body>
     <h1>Rock paper scissors</h1>
-    <div>
-        <p class="bot"></p>
-    </div>
-    <div>
-        <button id="rock" type="button" onclick="rock()">Rock</button>
-        <button id="paper" type="button" onclick="paper()">Paper</button>
-        <button id="scissors" type="button" onclick="scissors()">Scissors</button>
-    </div>
+    <section id="game">
+        <div>
+            <div class="point">
+                <p>Bot : <span id="bot"></span></p>
+                <p id="gameBot"></p>
+            </div>
+            <div class="point">
+                <p>Humain : <span id="humain"></span></p>
+                <p id="gameHumain"></p>
+            </div>
+        </div>
+        <div class="button">
+            <button id="rock" type="button" onclick="rock()">Rock</button>
+            <button id="paper" type="button" onclick="paper()">Paper</button>
+            <button id="scissors" type="button" onclick="scissors()">Scissors</button>
+        </div>
+    </section>
 </body>
 <script src="scripts.js"></script>
 </html>
