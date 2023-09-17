@@ -2,10 +2,14 @@ let arrayGame = ["Paper", "Rock", "Scissors"];
 let bot = 0
 let humain = 0;
 
-let pointBot = document.getElementById("bot");
-let pointHumain = document.getElementById("humain");
-let gameBot = document.getElementById("gameBot");
-let gameHumain = document.getElementById("gameHumain");
+function getElement(element) {
+    return document.getElementById(element);
+}
+
+let pointBot = getElement("bot");
+let pointHumain = getElement("humain");
+let gameBot = getElement("gameBot");
+let gameHumain = getElement("gameHumain");
 
 // The paper win against the rock
 function paper() {
