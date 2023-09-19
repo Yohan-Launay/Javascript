@@ -13,14 +13,37 @@ let button7 = elementById("button-7");
 let button8 = elementById("button-8");
 let button9 = elementById("button-9");
 let textTour = elementById("tour")
-
 let cross = "X";
 let circle = "O";
-
 let tourPlayer1 = "Tour du joueur 1";
 let tourPlayer2 = "Tour du joueur 2";
-
 let tour = true;
+
+function victoryJoueur1() {
+    if (button1.innerText === cross && button2.innerText === cross && button3.innerText === cross ||
+        button1.innerText === cross && button4.innerText === cross && button7.innerText === cross ||
+        button1.innerText === cross && button5.innerText === cross && button9.innerText === cross ||
+        button3.innerText === cross && button6.innerText === cross && button9.innerText === cross ||
+        button3.innerText === cross && button5.innerText === cross && button8.innerText === cross ||
+        button2.innerText === cross && button4.innerText === cross && button8.innerText === cross ||
+        button4.innerText === cross && button5.innerText === cross && button6.innerText === cross ||
+        button7.innerText === cross && button8.innerText === cross && button9.innerText === cross ) {
+        textTour.innerText = "win player 1 !";
+    }
+}
+
+function victoryJoueur2() {
+    if (button1.innerText === circle && button2.innerText === circle && button3.innerText === circle ||
+        button1.innerText === circle && button4.innerText === circle && button7.innerText === circle ||
+        button1.innerText === circle && button5.innerText === circle && button9.innerText === circle ||
+        button3.innerText === circle && button6.innerText === circle && button9.innerText === circle ||
+        button3.innerText === circle && button5.innerText === circle && button8.innerText === circle ||
+        button2.innerText === circle && button4.innerText === circle && button8.innerText === circle ||
+        button4.innerText === circle && button5.innerText === circle && button6.innerText === circle ||
+        button7.innerText === circle && button8.innerText === circle && button9.innerText === circle ) {
+        textTour.innerText = "win player 2 !";
+    }
+}
 
 function button_1() {
     if (tour === true) {
@@ -28,12 +51,14 @@ function button_1() {
         button1.innerText = cross;
         button1.disabled = true;
         textTour.innerText = tourPlayer2;
+        victoryJoueur1();
     } else {
         tour = true;
         button1.innerText = circle;
         button1.disabled = true;
         textTour.innerText = tourPlayer1;
         textTour.innerText = tourPlayer1;
+        victoryJoueur2();
     }
 }
 function button_2() {
@@ -42,11 +67,13 @@ function button_2() {
         button2.innerText = cross;
         button2.disabled = true;
         textTour.innerText = tourPlayer2;
+        victoryJoueur1();
     } else {
         tour = true;
         button2.innerText = circle;
         button2.disabled = true;
         textTour.innerText = tourPlayer1;
+        victoryJoueur2();
     }
 }
 function button_3() {
@@ -55,11 +82,13 @@ function button_3() {
         button3.innerText = cross;
         button3.disabled = true;
         textTour.innerText = tourPlayer2;
+        victoryJoueur1();
     } else {
         tour = true;
         button3.innerText = circle;
         button3.disabled = true;
         textTour.innerText = tourPlayer1;
+        victoryJoueur2();
     }
 }
 function button_4() {
@@ -68,11 +97,13 @@ function button_4() {
         button4.innerText = cross;
         button4.disabled = true;
         textTour.innerText = tourPlayer2;
+        victoryJoueur1();
     } else {
         tour = true;
         button4.innerText = circle;
         button4.disabled = true;
         textTour.innerText = tourPlayer1;
+        victoryJoueur2();
     }
 }
 function button_5() {
@@ -81,11 +112,13 @@ function button_5() {
         button5.innerText = cross;
         button5.disabled = true;
         textTour.innerText = tourPlayer2;
+        victoryJoueur1();
     } else {
         tour = true;
         button5.innerText = circle;
         button5.disabled = true;
         textTour.innerText = tourPlayer1;
+        victoryJoueur2();
     }
 }
 function button_6() {
@@ -94,11 +127,14 @@ function button_6() {
         button6.innerText = cross;
         button6.disabled = true;
         textTour.innerText = tourPlayer2;
+        victoryJoueur1();
     } else {
         tour = true;
         button6.innerText = circle;
         button6.disabled = true;
         textTour.innerText = tourPlayer1;
+        victoryJoueur2();
+
     }
 }
 function button_7() {
@@ -107,11 +143,13 @@ function button_7() {
         button7.innerText = cross;
         button7.disabled = true;
         textTour.innerText = tourPlayer2;
+        victoryJoueur1();
     } else {
         tour = true;
         button7.innerText = circle;
         button7.disabled = true;
         textTour.innerText = tourPlayer1;
+        victoryJoueur2();
     }
 }
 function button_8() {
@@ -120,11 +158,13 @@ function button_8() {
         button8.innerText = cross;
         button8.disabled = true;
         textTour.innerText = tourPlayer2;
+        victoryJoueur1();
     } else {
         tour = true;
         button8.innerText = circle;
         button8.disabled = true;
         textTour.innerText = tourPlayer1;
+        victoryJoueur2();
     }
 }
 function button_9() {
@@ -133,11 +173,15 @@ function button_9() {
         button9.innerText = cross
         button9.disabled = true;
         textTour.innerText = tourPlayer2;
+        victoryJoueur1();
     } else {
         tour = true;
         button9.innerText = circle;
         button9.disabled = true;
         textTour.innerText = tourPlayer1;
+        victoryJoueur2();
     }
 }
+
+
 
