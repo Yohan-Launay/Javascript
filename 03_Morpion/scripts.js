@@ -1,4 +1,3 @@
-let buttonId = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 function elementById(id) {
     return document.getElementById(id);
@@ -13,139 +12,132 @@ let button6 = elementById("button-6");
 let button7 = elementById("button-7");
 let button8 = elementById("button-8");
 let button9 = elementById("button-9");
+let textTour = elementById("tour")
 
-// Si un boutton est disabled = true, tu ne touches pas à ce bouton
-// Check si les boutons sont true ou false dans le tableau
-button4 = true;
-let arrayButtons = [button1, button2, button3, button4, button5, button6, button7, button8, button9];
+let cross = "X";
+let circle = "O";
 
-for (let key in arrayButtons) {
-    if (key == true) {
-        arrayButtons.slice();
-    }
-    console.log(arrayButtons)
-}
+let tourPlayer1 = "Tour du joueur 1";
+let tourPlayer2 = "Tour du joueur 2";
 
-console.log(arrayButtons.length)
-
-
-
+let tour = true;
 
 function button_1() {
-    button1.innerText = "X";
-    button1.disabled = true;
-    let randomButton = Math.floor(Math.random() * arrayButtons.length);
-
-    for (let key in arrayButtons) {
-        if (key == false) {
-            arrayButtons[randomButton].innerText = "O";
-            arrayButtons[randomButton].disabled = true;
-        } else {
-            console.log("non")
-        }
+    if (tour === true) {
+        tour = false;
+        button1.innerText = cross;
+        button1.disabled = true;
+        textTour.innerText = tourPlayer2;
+    } else {
+        tour = true;
+        button1.innerText = circle;
+        button1.disabled = true;
+        textTour.innerText = tourPlayer1;
+        textTour.innerText = tourPlayer1;
     }
-    console.log(arrayButtons)
-
 }
 function button_2() {
-    button2.innerText = "X";
-    button2.disabled = true;
-    console.log(button2);
-    let randomButton = Math.floor(Math.random() * arrayButtons.length);
-    for (let key in arrayButtons) {
-        if (key == false) {
-            arrayButtons[randomButton].innerText = "O";
-            arrayButtons[randomButton].disabled = true;
-            console.log('false')
-        }
+    if (tour === true) {
+        tour = false;
+        button2.innerText = cross;
+        button2.disabled = true;
+        textTour.innerText = tourPlayer2;
+    } else {
+        tour = true;
+        button2.innerText = circle;
+        button2.disabled = true;
+        textTour.innerText = tourPlayer1;
     }
-
 }
 function button_3() {
-    button3.innerText = "X";
-    button3.disabled = true;
-    let randomButton = Math.floor(Math.random() * arrayButtons.length);
-    for (let key in arrayButtons) {
-        if (key == false) {
-            arrayButtons[randomButton].innerText = "O";
-            arrayButtons[randomButton].disabled = true;
-            console.log('false')
-        }
+    if (tour === true) {
+        tour = false;
+        button3.innerText = cross;
+        button3.disabled = true;
+        textTour.innerText = tourPlayer2;
+    } else {
+        tour = true;
+        button3.innerText = circle;
+        button3.disabled = true;
+        textTour.innerText = tourPlayer1;
     }
-
 }
 function button_4() {
-    button4.innerText = "X";
-    button2.disabled = true;
-    let randomButton = Math.floor(Math.random() * arrayButtons.length);
-    for (let key in arrayButtons) {
-        if (key == false) {
-            arrayButtons[randomButton].innerText = "O";
-            arrayButtons[randomButton].disabled = true;
-            console.log('false')
-        }
+    if (tour === true) {
+        tour = false;
+        button4.innerText = cross;
+        button4.disabled = true;
+        textTour.innerText = tourPlayer2;
+    } else {
+        tour = true;
+        button4.innerText = circle;
+        button4.disabled = true;
+        textTour.innerText = tourPlayer1;
     }
-
 }
 function button_5() {
-    button5.innerText = "X";
-    button5.disabled = true;
-    let randomButton = Math.floor(Math.random() * arrayButtons.length);
-    for (let key in arrayButtons) {
-        if (key == false) {
-            arrayButtons[randomButton].innerText = "O";
-            arrayButtons[randomButton].disabled = true;
-            console.log('false')
-        }
+    if (tour === true) {
+        tour = false;
+        button5.innerText = cross;
+        button5.disabled = true;
+        textTour.innerText = tourPlayer2;
+    } else {
+        tour = true;
+        button5.innerText = circle;
+        button5.disabled = true;
+        textTour.innerText = tourPlayer1;
     }
 }
 function button_6() {
-    button6.innerText = "X";
-    button6.disabled = true;
-    let randomButton = Math.floor(Math.random() * arrayButtons.length);
-    for (let key in arrayButtons) {
-        if (key == false) {
-            arrayButtons[randomButton].innerText = "O";
-            arrayButtons[randomButton].disabled = true;
-            console.log('false')
-        }
+    if (tour === true) {
+        tour = false;
+        button6.innerText = cross;
+        button6.disabled = true;
+        textTour.innerText = tourPlayer2;
+    } else {
+        tour = true;
+        button6.innerText = circle;
+        button6.disabled = true;
+        textTour.innerText = tourPlayer1;
     }
 }
 function button_7() {
-    button7.innerText = "X";
-    button7.disabled = true;
-    let randomButton = Math.floor(Math.random() * arrayButtons.length);
-    for (let key in arrayButtons) {
-        if (key == false) {
-            arrayButtons[randomButton].innerText = "O";
-            arrayButtons[randomButton].disabled = true;
-            console.log('false')
-        }
+    if (tour === true) {
+        tour = false;
+        button7.innerText = cross;
+        button7.disabled = true;
+        textTour.innerText = tourPlayer2;
+    } else {
+        tour = true;
+        button7.innerText = circle;
+        button7.disabled = true;
+        textTour.innerText = tourPlayer1;
     }
 }
 function button_8() {
-    button8.innerText = "X";
-    button8.disabled = true;
-    let randomButton = Math.floor(Math.random() * arrayButtons.length);
-    for (let key in arrayButtons) {
-        if (key == false) {
-            arrayButtons[randomButton].innerText = "O";
-            arrayButtons[randomButton].disabled = true;
-            console.log('false')
-        }
+    if (tour === true) {
+        tour = false;
+        button8.innerText = cross;
+        button8.disabled = true;
+        textTour.innerText = tourPlayer2;
+    } else {
+        tour = true;
+        button8.innerText = circle;
+        button8.disabled = true;
+        textTour.innerText = tourPlayer1;
     }
-
 }
 function button_9() {
-    button9.innerText = "X";
-    button9.disabled = true;
-    let randomButton = Math.floor(Math.random() * arrayButtons.length);
-    for (let key in arrayButtons) {
-        if (key == false) {
-            arrayButtons[randomButton].innerText = "O";
-            arrayButtons[randomButton].disabled = true;
-            console.log('false')
-        }
+    if (tour === true) {
+        tour = false;
+        button9.innerText = cross
+        button9.disabled = true;
+        textTour.innerText = tourPlayer2;
+    } else {
+        tour = true;
+        button9.innerText = circle;
+        button9.disabled = true;
+        textTour.innerText = tourPlayer1;
     }
 }
 
